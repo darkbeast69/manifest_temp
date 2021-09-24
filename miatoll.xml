@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <remote  name="darkbeast69"
+           fetch="https://github.com/darkbeast69"/>
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"/>
+
+ <remote name="gitlab"
+          fetch="https://gitlab.com" />
+
+  <!-- kernel -->
+	<project name="android_kernel_xiaomi_sm6250" path="kernel/xiaomi/sm6250" remote="los" revision="lineage-18.1" clone-depth="1"/>
+
+  <!-- Tree-->
+	<project name="android_device_xiaomi_miatoll" path="device/xiaomi/miatoll" remote="darkbeast69" revision="lineage-18.1"/>
+	<project name="android_device_xiaomi_sm6250-common" path="device/xiaomi/sm6250-common" remote="los" revision="lineage-18.1"/>
+  <!-- vendor -->
+	<project name="the-muppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" revision="lineage-18.1" />
+</manifest>
