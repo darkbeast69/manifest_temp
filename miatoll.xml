@@ -6,16 +6,17 @@
 
   <remote  name="los"
            fetch="https://github.com/LineageOS"/>
-
- <remote name="gitlab"
-          fetch="https://gitlab.com" />
+	
+  <remote  name="sonal"
+           fetch="https://github.com/SonalSingh18"/>
 
   <!-- kernel -->
-	<project name="android_kernel_xiaomi_sm6250" path="kernel/xiaomi/sm6250" remote="los" revision="lineage-18.1" clone-depth="1"/>
+	<project name="android_kernel_xiaomi_sm6250" path="kernel/xiaomi/miatoll" remote="darkbeast69" revision="lineage-18.1" clone-depth="1"/>
 
   <!-- Tree-->
-	<project name="android_device_xiaomi_miatoll" path="device/xiaomi/miatoll" remote="darkbeast69" revision="lineage-18.1"/>
-	<project name="android_device_xiaomi_sm6250-common" path="device/xiaomi/sm6250-common" remote="los" revision="lineage-18.1"/>
+	<project name="device_xiaomi_miatoll" path="device/xiaomi/miatoll" remote="darkbeast69" revision="ace"/>
+	
   <!-- vendor -->
-	<project name="the-muppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" revision="lineage-18.1" />
+	<project name="vendor_xiaomi_miatoll" path="vendor/xiaomi/miatoll" remote="darkbeast69" revision="ace" />
+	<project name="vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="sonal" revision="master" />
 </manifest>
